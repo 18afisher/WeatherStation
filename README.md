@@ -12,3 +12,4 @@ The first version! The program has some basic features, such as:
 Version 0.2 will have:
 * A basic neural network
 * A better graphical interface
+* Support for notifications on the Central device 
