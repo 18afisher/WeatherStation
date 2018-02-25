@@ -6,10 +6,12 @@ The Raspberry Pi acts as a Central device, receiving data from the Peripheral (A
 # Version 0.1 
 The first version! The program has some basic features, such as:
 * Sending and retrieving data from an Arduino 101 to a Raspberry Pi via Bluetooth Low Energy (BLE)
-* Displaying data on 3 graphs
+* Converting data into readable values
+* Publishing that data onto a command prompt. 
 
 # What's coming next? 
 Version 0.2 will have:
 * A basic neural network
-* A better graphical interface
+* A graphical interface with graphs
 * Support for notifications on the Central device 
+* Multiple updates. 
