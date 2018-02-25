@@ -117,10 +117,10 @@ def dbusArrayToSwappedFloat(rawValue):
 			hexValueArray.insert(index, u)
 	fixedHexValue = ''.join([str(w) for w in hexValueArray])
 	bytesConvertedHex = binascii.unhexlify(fixedHexValue)
-	y = array.array('f', bytesConvertedHex)  # Convert to a weird array whose only purpose is for endianness swapping
-	y.byteswap() # Prepare for swapping
-	s = struct.Struct('>f') # Swap endianness
-	unpacked = s.unpack_from(y)[0] # Make it a normal value
+	hexToFloatArrayArray = array.array('f', bytesConvertedHex)  # Convert to a weird array whose only purpose is for endianness swapping
+	hexToFloatArrayArray.byteswap() # Prepare for swapping
+	swap = struct.Struct('>f') # Swap endianness
+	unpacked = swap.unpack_from(hexToFloatArrayArray)[0] # Make it a normal value
 	return float(unpacked) # Turn it into a float and return it 
 
 # TODO: Tell the Arduino 101 that the data has been received, and to update it with new data
