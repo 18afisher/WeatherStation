@@ -1,7 +1,5 @@
 /* 
 Weather Station project, Version 2.
-This new version uses a Raspberry Pi 3 to create an advanced prediction
-through a neural network. 
 Written by Aidan Fisher, 2018. 
 */
 #include <Wire.h>
